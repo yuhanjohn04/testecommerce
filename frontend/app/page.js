@@ -24,7 +24,10 @@ function sortProducts(products, sort) {
 }
 
 function apiHeaders() {
-  const headers = { "Content-Type": "application/json" };
+  const headers = {
+    "Content-Type": "application/json",
+    "ngrok-skip-browser-warning": "true",
+  };
   if (typeof window !== "undefined") {
     const cartId = localStorage.getItem(CART_KEY);
     if (cartId) headers["X-Cart-Id"] = cartId;
