@@ -62,6 +62,11 @@ local_settings.py
 db.sqlite3
 db.sqlite3-journal
 
+# Next.js
+node_modules/
+.next/
+out/
+
 # Flask stuff:
 instance/
 .webassets-cache
